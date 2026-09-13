@@ -20,7 +20,7 @@
             }
         }
     </script>
-    <!-- Font Awesome -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .neon-glow {
@@ -31,19 +31,20 @@
         }
     </style>
 </head>
-<body class="bg-rhDark text-white font-sans antialiased selection:bg-rhGreen selection:text-black">
+<body class="bg-rhDark text-white font-sans antialiased selection:bg-rhGreen selection:text-black min-h-screen flex flex-col justify-between">
 
     <!-- NAVBAR -->
-    <nav class="border-b border-gray-800 bg-rhDark/90 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
+    <nav class="border-b border-gray-800 bg-rhDark/90 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
         <div class="flex items-center gap-3">
             <span class="text-rhGreen text-2xl font-black tracking-wider text-glow">$VLADFROM</span>
         </div>
         <div class="hidden md:flex gap-6 text-sm font-semibold text-gray-300">
             <a href="#about" class="hover:text-rhGreen transition">About</a>
             <a href="#tokenomics" class="hover:text-rhGreen transition">Tokenomics</a>
+            <a href="#memes" class="hover:text-rhGreen transition">Memes</a>
         </div>
         <div class="flex items-center gap-3">
-            <!-- Twitter/X Link -->
+            <!-- Official Twitter/X Link -->
             <a href="https://x.com/VladfromRH" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white p-2.5 rounded-full border border-gray-700 transition" title="Follow on X">
                 <i class="fa-brands fa-x-twitter text-lg"></i>
             </a>
@@ -54,7 +55,7 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+    <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center w-full">
         <div>
             <div class="inline-block bg-rhGreen/10 border border-rhGreen/30 text-rhGreen px-3 py-1 rounded-full text-xs font-bold mb-4">
                 🏛️ "IT'S NOT A PLATFORM, IT'S A VLADFROM"
@@ -63,13 +64,13 @@
                 When I was a young boy in Bulgaria...
             </h1>
             <p class="text-gray-400 text-lg mb-6">
-                Welcome to <span class="text-rhGreen font-bold">$VLADFROM</span> — the meme coin inspired by Vlad's iconic accent in Congress. The only vladfrom where retail always wins (until we turn off the buy button).
+                Welcome to <span class="text-rhGreen font-bold">$VLADFROM</span> — the meme coin inspired by Vlad's iconic accent in Congress. The only vladfrom where retail always wins.
             </p>
 
             <!-- Contract Address Box -->
             <div class="bg-rhCard border border-gray-800 rounded-xl p-3 mb-6 flex items-center justify-between gap-2">
                 <div class="text-xs text-gray-400 truncate font-mono">
-                    <span class="text-rhGreen font-bold">CA:</span> <span id="ca-text">ComingSoonContractAddressHere...</span>
+                    <span class="text-rhGreen font-bold">CA:</span> <span id="ca-text">TBA (Launching Soon)</span>
                 </div>
                 <button onclick="copyCA()" class="bg-gray-800 hover:bg-gray-700 text-xs text-rhGreen font-bold px-3 py-1.5 rounded-lg border border-gray-700 transition shrink-0">
                     <i class="fa-regular fa-copy"></i> Copy
@@ -93,17 +94,20 @@
             </div>
         </div>
 
-        <!-- Hero Avatar Display -->
+        <!-- HERO AVATAR DISPLAY (Menggunakan images/Vladfrom.png) -->
         <div class="flex justify-center">
             <div class="relative group">
                 <div class="absolute -inset-1 bg-rhGreen rounded-full blur opacity-50 group-hover:opacity-100 transition duration-1000"></div>
-                <img src="1000057854.png" alt="Vladfrom" class="relative rounded-full w-80 h-80 md:w-96 md:h-96 object-cover border-4 border-rhGreen">
+                <!-- Path mengarah ke folder images dengan nama Vladfrom.png -->
+                <img src="images/Vladfrom.png" 
+                     alt="Vladfrom Logo" 
+                     class="relative rounded-full w-80 h-80 md:w-96 md:h-96 object-cover border-4 border-rhGreen">
             </div>
         </div>
     </section>
 
     <!-- MEME / CONGRESSIONAL HEARING SECTION -->
-    <section id="about" class="border-y border-gray-800 bg-rhCard/50 py-12">
+    <section id="about" class="border-y border-gray-800 bg-rhCard/50 py-12 w-full">
         <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
             <h2 class="text-2xl font-bold text-rhGreen">The Congressional Excuse Generator</h2>
             <div class="p-6 bg-rhDark rounded-xl border border-gray-800 italic text-gray-300 min-h-[100px] flex items-center justify-center">
@@ -121,7 +125,7 @@
     </section>
 
     <!-- TOKENOMICS -->
-    <section id="tokenomics" class="max-w-6xl mx-auto px-6 py-20">
+    <section id="tokenomics" class="max-w-6xl mx-auto px-6 py-20 w-full">
         <h2 class="text-3xl font-black text-center mb-12 tracking-wide">
             TOKENOMICS <span class="text-rhGreen">(100% BULGARIAN APPROVED)</span>
         </h2>
@@ -147,8 +151,29 @@
         </div>
     </section>
 
+    <!-- MEME / SOCIAL SECTION -->
+    <section id="memes" class="border-t border-gray-800 bg-rhCard/30 py-16 w-full">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-6 tracking-wide">
+                JOIN THE <span class="text-rhGreen">VLADFROM MOVEMENT</span>
+            </h2>
+            <p class="text-gray-400 max-w-xl mx-auto mb-8">
+                Follow us on X for official updates, community memes, and real-time announcements.
+            </p>
+
+            <!-- Tampilan Foto Gambar Vladfrom di Bagian Bawah -->
+            <div class="max-w-md mx-auto mb-8 rounded-2xl overflow-hidden border border-gray-800 hover:border-rhGreen transition">
+                <img src="images/Vladfrom.png" alt="Vladfrom Meme" class="w-full h-auto object-cover">
+            </div>
+
+            <a href="https://x.com/VladfromRH" target="_blank" class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-rhGreen font-bold px-8 py-4 rounded-xl border border-gray-700 transition text-lg">
+                <i class="fa-brands fa-x-twitter"></i> Follow @VladfromRH
+            </a>
+        </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-600 space-y-3">
+    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-600 space-y-3 w-full">
         <div class="flex justify-center gap-4 text-sm text-gray-400 mb-2">
             <a href="https://x.com/VladfromRH" target="_blank" class="hover:text-rhGreen transition"><i class="fa-brands fa-x-twitter"></i> @VladfromRH</a>
         </div>
@@ -158,14 +183,12 @@
 
     <!-- JAVASCRIPT -->
     <script>
-        // Copy CA Function
         function copyCA() {
             const caText = document.getElementById('ca-text').innerText;
             navigator.clipboard.writeText(caText);
             alert('Contract address copied to clipboard!');
         }
 
-        // Quotes Array
         const quotes = [
             '"Thank you Congressman for that very important question about our vladfrom..."',
             '"We had to temporarily restrict buying on our vladfrom to satisfy clearinghouse margin requirements."',
@@ -179,7 +202,6 @@
             document.getElementById('quote-box').innerText = quotes[quoteIndex];
         }
 
-        // Fake Voice Synthesizer for "Vladfrom"
         function speakVladfrom() {
             if ('speechSynthesis' in window) {
                 const msg = new SpeechSynthesisUtterance("Thank you congressman, our vladfrom is working perfectly.");
@@ -191,7 +213,6 @@
             }
         }
 
-        // Toggle Buy Button
         let isDisabled = false;
         function toggleBuyButton() {
             const btn = document.getElementById('buy-btn');
