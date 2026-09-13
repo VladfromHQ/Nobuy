@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$VLADFROM | When I Was A Young Boy In Bulgaria</title>
-    <!-- Tailwind CSS for styling -->
+    <title>$VLADFROM | Not A Platform, It's Vladfrom</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom Theme Colors -->
     <script>
         tailwind.config = {
             theme: {
@@ -21,7 +20,7 @@
             }
         }
     </script>
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .neon-glow {
@@ -35,7 +34,7 @@
 <body class="bg-rhDark text-white font-sans antialiased selection:bg-rhGreen selection:text-black">
 
     <!-- NAVBAR -->
-    <nav class="border-b border-gray-800 bg-rhDark/90 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+    <nav class="border-b border-gray-800 bg-rhDark/90 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
         <div class="flex items-center gap-3">
             <span class="text-rhGreen text-2xl font-black tracking-wider text-glow">$VLADFROM</span>
         </div>
@@ -44,87 +43,108 @@
             <a href="#tokenomics" class="hover:text-rhGreen transition">Tokenomics</a>
             <a href="#roadmap" class="hover:text-rhGreen transition">Roadmap</a>
         </div>
-        <a href="https://pump.fun" target="_blank" class="bg-rhGreen text-black font-bold px-5 py-2 rounded-full hover:bg-emerald-400 transition neon-glow">
-            BUY $VLADFROM
-        </a>
+        <div class="flex items-center gap-3">
+            <!-- Twitter/X Link -->
+            <a href="https://x.com/VladfromRH" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white p-2.5 rounded-full border border-gray-700 transition" title="Follow on X">
+                <i class="fa-brands fa-x-twitter text-lg"></i>
+            </a>
+            <a href="https://pump.fun" target="_blank" class="bg-rhGreen text-black font-bold px-5 py-2 rounded-full hover:bg-emerald-400 transition neon-glow">
+                BUY $VLADFROM
+            </a>
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
     <section class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
             <div class="inline-block bg-rhGreen/10 border border-rhGreen/30 text-rhGreen px-3 py-1 rounded-full text-xs font-bold mb-4">
-                🔴 LIVE FROM CONGRESSIONAL HEARING
+                🏛️ "IT'S NOT A PLATFORM, IT'S A VLADFROM"
             </div>
             <h1 class="text-4xl md:text-6xl font-black leading-tight mb-4">
-                "When I was a young boy in Bulgaria..."
+                When I was a young boy in Bulgaria...
             </h1>
-            <p class="text-gray-400 text-lg mb-8">
-                Official meme coin powered by <span class="text-rhGreen font-bold">VLADFROM</span>. The only trading platform where the buy button disappears when you need it most!
+            <p class="text-gray-400 text-lg mb-6">
+                Welcome to <span class="text-rhGreen font-bold">$VLADFROM</span> — the meme coin inspired by Vlad's iconic accent in Congress. The only trading platform where retail always wins (until we turn off the buy button).
             </p>
+
+            <!-- Contract Address Box -->
+            <div class="bg-rhCard border border-gray-800 rounded-xl p-3 mb-6 flex items-center justify-between gap-2">
+                <div class="text-xs text-gray-400 truncate font-mono">
+                    <span class="text-rhGreen font-bold">CA:</span> <span id="ca-text">ComingSoonPumpFunAddressHere...</span>
+                </div>
+                <button onclick="copyCA()" class="bg-gray-800 hover:bg-gray-700 text-xs text-rhGreen font-bold px-3 py-1.5 rounded-lg border border-gray-700 transition shrink-0">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+            </div>
             
             <!-- Interactive Buy Button Toggle -->
             <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-4">
                 <div class="flex justify-between items-center text-sm font-semibold text-gray-400">
-                    <span>Platform Status:</span>
-                    <span id="status-text" class="text-rhGreen font-bold">Trading Enabled</span>
+                    <span>Vladfrom Status:</span>
+                    <span id="status-text" class="text-rhGreen font-bold">Trading Active</span>
                 </div>
                 
                 <a id="buy-btn" href="https://pump.fun" target="_blank" class="block text-center w-full bg-rhGreen text-black font-extrabold text-lg py-4 rounded-xl hover:opacity-90 transition neon-glow">
-                    BUY NOW
+                    BUY $VLADFROM
                 </a>
 
                 <button onclick="toggleBuyButton()" class="text-xs text-gray-500 hover:text-gray-300 underline w-full text-center block">
-                    [Admin] Simulate Volatility (Disable Buy Button)
+                    [Admin] Restrict Trading (Simulate Market Volatility)
                 </button>
             </div>
         </div>
 
-        <!-- Logo Image Showcase -->
+        <!-- Hero Avatar Display -->
         <div class="flex justify-center">
             <div class="relative group">
                 <div class="absolute -inset-1 bg-rhGreen rounded-full blur opacity-50 group-hover:opacity-100 transition duration-1000"></div>
-                <!-- Ganti 'vlad.png' dengan nama file logo kamu -->
-                <img src="vlad.png" alt="Vladfrom Logo" class="relative rounded-full w-80 h-80 md:w-96 md:h-96 object-cover border-4 border-rhGreen">
+                <!-- Pake gambar profil vlad kamu -->
+                <img src="1000057854.png" alt="Vladfrom" class="relative rounded-full w-80 h-80 md:w-96 md:h-96 object-cover border-4 border-rhGreen">
             </div>
         </div>
     </section>
 
-    <!-- MEME / LIVE STORY CAROUSEL -->
+    <!-- MEME / CONGRESSIONAL HEARING SECTION -->
     <section id="about" class="border-y border-gray-800 bg-rhCard/50 py-12">
         <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
-            <h2 class="text-2xl font-bold text-rhGreen">Bulgarian Story Counter</h2>
-            <div class="p-6 bg-rhDark rounded-xl border border-gray-800 italic text-gray-300">
-                <p id="quote-box" class="text-lg">"Thank you Congressman for that very important question. Let me start by talking about my childhood in 1990s Bulgaria..."</p>
+            <h2 class="text-2xl font-bold text-rhGreen">The Congressional Excuse Generator</h2>
+            <div class="p-6 bg-rhDark rounded-xl border border-gray-800 italic text-gray-300 min-h-[100px] flex items-center justify-center">
+                <p id="quote-box" class="text-lg">"Thank you Congressman for that very important question about our vladfrom..."</p>
             </div>
-            <button onclick="nextQuote()" class="bg-gray-800 hover:bg-gray-700 text-xs text-gray-300 px-4 py-2 rounded-lg border border-gray-700 transition">
-                <i class="fa-solid fa-rotate-right mr-1"></i> Next Excuse
-            </button>
+            <div class="flex justify-center gap-3">
+                <button onclick="nextQuote()" class="bg-gray-800 hover:bg-gray-700 text-xs text-gray-300 px-4 py-2 rounded-lg border border-gray-700 transition">
+                    <i class="fa-solid fa-rotate-right mr-1"></i> Next Answer
+                </button>
+                <button onclick="speakVladfrom()" class="bg-rhGreen/10 hover:bg-rhGreen/20 text-rhGreen font-bold text-xs px-4 py-2 rounded-lg border border-rhGreen/30 transition">
+                    <i class="fa-solid fa-volume-high mr-1"></i> Hear "Vladfrom"
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- TOKENOMICS -->
     <section id="tokenomics" class="max-w-6xl mx-auto px-6 py-20">
         <h2 class="text-3xl font-black text-center mb-12 tracking-wide">
-            TOKENOMICS <span class="text-rhGreen">(100% RETAIL APPROVED)</span>
+            TOKENOMICS <span class="text-rhGreen">(100% BULGARIAN APPROVED)</span>
         </h2>
         
         <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 hover:border-rhGreen/50 transition">
                 <div class="text-gray-400 text-sm mb-2">TOTAL SUPPLY</div>
                 <div class="text-3xl font-black text-rhGreen">1,000,000,000</div>
-                <p class="text-xs text-gray-500 mt-2">1 Billion $VLADFROM minted in Bulgaria.</p>
+                <p class="text-xs text-gray-500 mt-2">1 Billion $VLADFROM tokens.</p>
             </div>
 
             <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 hover:border-rhGreen/50 transition">
-                <div class="text-gray-400 text-sm mb-2">TAXES</div>
+                <div class="text-gray-400 text-sm mb-2">BUY / SELL TAX</div>
                 <div class="text-3xl font-black text-rhGreen">0% / 0%</div>
-                <p class="text-xs text-gray-500 mt-2">Zero buy tax. Zero sell tax. Absolute free market (until we halt it).</p>
+                <p class="text-xs text-gray-500 mt-2">Zero fees. Pure retail power.</p>
             </div>
 
             <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 hover:border-rhGreen/50 transition">
                 <div class="text-gray-400 text-sm mb-2">LIQUIDITY</div>
                 <div class="text-3xl font-black text-rhGreen">100% BURNED</div>
-                <p class="text-xs text-gray-500 mt-2">LP tokens sent to the void. No rugs, just memes.</p>
+                <p class="text-xs text-gray-500 mt-2">LP burned completely on launch.</p>
             </div>
         </div>
     </section>
@@ -132,31 +152,31 @@
     <!-- ROADMAP -->
     <section id="roadmap" class="bg-rhCard/30 py-20 border-t border-gray-800">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-3xl font-black text-center mb-12">FEATURE UPDATES (ROADMAP)</h2>
+            <h2 class="text-3xl font-black text-center mb-12">VLADFROM ROADMAP</h2>
             
             <div class="space-y-8">
                 <!-- Phase 1 -->
                 <div class="flex gap-4">
                     <div class="w-10 h-10 rounded-full bg-rhGreen text-black font-bold flex items-center justify-center shrink-0">1</div>
                     <div>
-                        <h3 class="text-xl font-bold text-rhGreen">Phase 1: Initial Public Offer-meme</h3>
-                        <p class="text-gray-400 text-sm mt-1">Launch $VLADFROM on Pump.fun / Raydium. Gather 1,000 retail traders. Viral Twitter meme push.</p>
+                        <h3 class="text-xl font-bold text-rhGreen">Phase 1: Launch on Pump.fun</h3>
+                        <p class="text-gray-400 text-sm mt-1">Deploy $VLADFROM contract, build community on X (@VladfromRH) & Telegram.</p>
                     </div>
                 </div>
                 <!-- Phase 2 -->
                 <div class="flex gap-4">
                     <div class="w-10 h-10 rounded-full bg-gray-800 border border-rhGreen text-rhGreen font-bold flex items-center justify-center shrink-0">2</div>
                     <div>
-                        <h3 class="text-xl font-bold">Phase 2: Congressional Hearing</h3>
-                        <p class="text-gray-400 text-sm mt-1">Trending on DEXScreener. Get audited by retail traders. Reach $1M Market Cap.</p>
+                        <h3 class="text-xl font-bold">Phase 2: Raydium Graduation & DEX Trending</h3>
+                        <p class="text-gray-400 text-sm mt-1">Hit DEXScreener trending, community meme raids, Congressional Hearing memes viral.</p>
                     </div>
                 </div>
                 <!-- Phase 3 -->
                 <div class="flex gap-4">
                     <div class="w-10 h-10 rounded-full bg-gray-800 border border-gray-700 text-gray-500 font-bold flex items-center justify-center shrink-0">3</div>
                     <div>
-                        <h3 class="text-xl font-bold text-gray-500">Phase 3: Restrict Trading</h3>
-                        <p class="text-gray-500 text-sm mt-1">Tier-1 CEX Listings. Reaching $10M+ Market Cap. Vlad buys Bulgaria.</p>
+                        <h3 class="text-xl font-bold text-gray-500">Phase 3: Turn Off The Sell Button</h3>
+                        <p class="text-gray-500 text-sm mt-1">Tier 1 Exchange Listings, $10M+ Market Cap, Vlad buys back Bulgaria.</p>
                     </div>
                 </div>
             </div>
@@ -164,19 +184,29 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-600">
-        <p class="mb-2">$VLADFROM is a meme coin with no intrinsic value or expectation of financial return. For entertainment purposes only.</p>
-        <p>© 2026 VLADFROM Platform. All rights reserved.</p>
+    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-600 space-y-3">
+        <div class="flex justify-center gap-4 text-sm text-gray-400 mb-2">
+            <a href="https://x.com/VladfromRH" target="_blank" class="hover:text-rhGreen transition"><i class="fa-brands fa-x-twitter"></i> @VladfromRH</a>
+        </div>
+        <p>$VLADFROM is a meme token with no intrinsic value. Created purely for entertainment purposes.</p>
+        <p>© 2026 VLADFROM. All rights reserved.</p>
     </footer>
 
-    <!-- INTERACTIVE SCRIPTS -->
+    <!-- JAVASCRIPT -->
     <script>
-        // Quotes array for excuse generator
+        // Copy CA Function
+        function copyCA() {
+            const caText = document.getElementById('ca-text').innerText;
+            navigator.clipboard.writeText(caText);
+            alert('Contract address copied to clipboard!');
+        }
+
+        // Quotes Array
         const quotes = [
-            '"Thank you Congressman for that very important question. Let me start by talking about my childhood in 1990s Bulgaria..."',
-            '"We restricted buying to protect our customers and satisfy clearinghouse margin requirements."',
-            '"I appreciate the opportunity to clarify: the platform was simply undergoing high market volatility."',
-            '"Reclaiming free market trading is our top priority, right after this 5-minute hearing response."'
+            '"Thank you Congressman for that very important question about our vladfrom..."',
+            '"We had to temporarily restrict buying on our vladfrom to satisfy clearinghouse margin requirements."',
+            '"I appreciate the opportunity to clarify: the vladfrom was simply experiencing unprecedented volatility."',
+            '"When I was a young boy in 1990s Bulgaria, we did not have trading buttons either."'
         ];
 
         let quoteIndex = 0;
@@ -185,22 +215,34 @@
             document.getElementById('quote-box').innerText = quotes[quoteIndex];
         }
 
-        // Toggle Buy Button Meme Function
+        // Fake Voice Synthesizer for "Vladfrom"
+        function speakVladfrom() {
+            if ('speechSynthesis' in window) {
+                const msg = new SpeechSynthesisUtterance("Thank you congressman, our vladfrom is working perfectly.");
+                msg.rate = 0.9;
+                msg.pitch = 0.9;
+                window.speechSynthesis.speak(msg);
+            } else {
+                alert('Audio speech not supported on your browser.');
+            }
+        }
+
+        // Toggle Buy Button
         let isDisabled = false;
         function toggleBuyButton() {
             const btn = document.getElementById('buy-btn');
             const status = document.getElementById('status-text');
 
             if (!isDisabled) {
-                btn.innerText = "BUYING TEMPORARILY DISABLED";
+                btn.innerText = "BUYING TEMPORARILY RESTRICTED";
                 btn.className = "block text-center w-full bg-rhRed text-white font-extrabold text-lg py-4 rounded-xl cursor-not-allowed opacity-80 pointer-events-none";
-                status.innerText = "High Volatility - Buying Restricted";
+                status.innerText = "High Volatility - Buy Button Halted";
                 status.className = "text-rhRed font-bold";
                 isDisabled = true;
             } else {
-                btn.innerText = "BUY NOW";
+                btn.innerText = "BUY $VLADFROM";
                 btn.className = "block text-center w-full bg-rhGreen text-black font-extrabold text-lg py-4 rounded-xl hover:opacity-90 transition neon-glow";
-                status.innerText = "Trading Enabled";
+                status.innerText = "Trading Active";
                 status.className = "text-rhGreen font-bold";
                 isDisabled = false;
             }
@@ -208,4 +250,3 @@
     </script>
 </body>
 </html>
-
