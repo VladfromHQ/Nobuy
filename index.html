@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VLADFROM | The Internet Archive</title>
+    <title>$VLADFROM | The Internet's Wrong Platform</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,9 +12,8 @@
                 extend: {
                     colors: {
                         rhGreen: '#00ff55',
-                        rhDark: '#0a0d0f',
-                        rhCard: '#13171a',
-                        rhGold: '#ffd700',
+                        rhDark: '#0b0e11',
+                        rhCard: '#181c20',
                         rhRed: '#ff3b30'
                     }
                 }
@@ -24,236 +23,457 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .neon-glow { box-shadow: 0 0 25px rgba(0, 255, 85, 0.3); }
+        .neon-glow { box-shadow: 0 0 25px rgba(0, 255, 85, 0.35); }
         .text-glow { text-shadow: 0 0 12px rgba(0, 255, 85, 0.6); }
-        .classified-pattern { background: repeating-linear-gradient(45deg, #181c20, #181c20 10px, #0f1215 10px, #0f1215 20px); }
+        .border-glow { box-shadow: inset 0 0 15px rgba(0, 255, 85, 0.15); }
     </style>
 </head>
 <body class="bg-rhDark text-white font-sans antialiased selection:bg-rhGreen selection:text-black min-h-screen flex flex-col justify-between">
 
     <!-- NAVBAR -->
-    <nav class="border-b border-gray-800 bg-rhDark/90 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
-        <a href="#" class="text-rhGreen text-xl font-black tracking-wider text-glow flex items-center gap-2">
-            <i class="fa-solid fa-box-archive"></i> VLADFROM ARCHIVE
+    <nav class="border-b border-gray-800 bg-rhDark/90 backdrop-blur sticky top-0 z-50 px-4 md:px-8 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
+        <a href="#" class="text-rhGreen text-xl md:text-2xl font-black tracking-wider text-glow flex items-center gap-2">
+            $VLADFROM
         </a>
-        <div class="flex items-center gap-4 text-xs font-mono">
-            <span class="text-gray-400 hidden sm:inline">ARCHIVE ID: #2026-VLAD</span>
-            <a href="https://x.com/VladfromRH" target="_blank" class="bg-rhGreen/10 hover:bg-rhGreen/20 text-rhGreen px-3 py-1.5 rounded-full border border-rhGreen/30 transition">
-                <i class="fa-brands fa-x-twitter mr-1"></i> Follow Archive
+        
+        <div class="hidden md:flex gap-6 text-sm font-bold tracking-wide text-gray-300">
+            <a href="#about" class="hover:text-rhGreen transition">LORE</a>
+            <a href="#dictionary" class="hover:text-rhGreen transition">DICTIONARY</a>
+            <a href="#hearing" class="hover:text-rhGreen transition">HEARING</a>
+            <a href="#tools" class="hover:text-rhGreen transition">TOOLS</a>
+            <a href="#archive" class="hover:text-rhGreen transition">ARCHIVE</a>
+            <a href="#token" class="hover:text-rhGreen transition">TOKEN</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <a href="https://x.com/VladfromRH" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white p-2.5 rounded-full border border-gray-700 transition" title="Follow on X">
+                <i class="fa-brands fa-x-twitter text-base"></i>
+            </a>
+            <a href="#token" class="bg-rhGreen text-black font-extrabold text-xs md:text-sm px-4 md:px-5 py-2.5 rounded-full hover:bg-emerald-400 transition neon-glow shrink-0">
+                BUY $VLADFROM
             </a>
         </div>
     </nav>
 
-    <!-- HEADER / INTRO -->
-    <header class="max-w-4xl mx-auto px-6 pt-16 pb-12 text-center space-y-6">
-        <div class="inline-block bg-rhGreen/10 border border-rhGreen/30 text-rhGreen px-4 py-1.5 rounded-full text-xs font-mono font-bold tracking-widest uppercase">
-            UNCLASSIFIED INTERNET HISTORY
-        </div>
-        <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight">
-            WHAT IF THE STORY OF VLAD WAS TOLD BY THE <span class="text-rhGreen text-glow">INTERNET?</span>
-        </h1>
-        <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            From a young boy in Bulgaria to Stanford, Wall Street, Congress, and the ultimate internet typo. Scroll to explore the timeline.
-        </p>
-        <div class="pt-4">
-            <a href="#timeline" class="text-xs font-mono text-rhGreen animate-bounce inline-block">
-                SCROLL TO UNLOCK ARCHIVE ↓
-            </a>
-        </div>
-    </header>
-
-    <!-- INTERACTIVE TIMELINE ARCHIVE -->
-    <section id="timeline" class="max-w-4xl mx-auto px-6 py-10 w-full relative">
-        <!-- Vertical Line -->
-        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-800 -translate-x-1/2"></div>
-
-        <div class="space-y-16">
-            
-            <!-- CHAPTER 1 -->
-            <div class="relative flex flex-col md:flex-row items-center group">
-                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-rhDark border-2 border-rhGreen text-rhGreen text-xs font-mono font-bold z-10 mb-4 md:mb-0 shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                    2000s
-                </div>
-                <div class="w-full md:w-[45%] md:pr-8 md:text-right">
-                    <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-3 hover:border-rhGreen/40 transition">
-                        <span class="text-[10px] font-mono bg-gray-800 px-2.5 py-1 rounded text-gray-300">CHAPTER 01</span>
-                        <h3 class="text-xl font-black text-rhGreen">The Beginning</h3>
-                        <p class="text-xs text-gray-400 leading-relaxed">
-                            "When I was a young boy in Bulgaria..." A phrase that would one day be etched into Congressional transcripts forever.
-                        </p>
-                        <a href="https://en.wikipedia.org/wiki/Vlad_Tenev" target="_blank" class="inline-block text-[11px] text-rhGreen font-mono hover:underline">
-                            [View Historical Record ↗]
-                        </a>
-                    </div>
-                </div>
+    <!-- LAYER 1: HERO SECTION -->
+    <section class="max-w-6xl mx-auto px-6 pt-12 pb-20 grid md:grid-cols-2 gap-12 items-center w-full">
+        <div class="space-y-6">
+            <div class="inline-block bg-rhGreen/10 border border-rhGreen/30 text-rhGreen px-3 py-1 rounded-full text-xs font-bold tracking-wider">
+                🏛️ THE INTERNET'S WRONG PLATFORM
             </div>
-
-            <!-- CHAPTER 2 -->
-            <div class="relative flex flex-col md:flex-row items-center group md:flex-row-reverse">
-                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-rhDark border-2 border-rhGreen text-rhGreen text-xs font-mono font-bold z-10 mb-4 md:mb-0 shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                    STANFORD
-                </div>
-                <div class="w-full md:w-[45%] md:pl-8">
-                    <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-3 hover:border-rhGreen/40 transition">
-                        <span class="text-[10px] font-mono bg-gray-800 px-2.5 py-1 rounded text-gray-300">CHAPTER 02</span>
-                        <h3 class="text-xl font-black text-rhGreen">The Roommates</h3>
-                        <p class="text-xs text-gray-400 leading-relaxed">
-                            Two Stanford math majors meet. They didn't know it yet, but they were about to make trading accessible to everyone (and confuse Congress later).
-                        </p>
-                        <div class="text-[11px] font-mono text-gray-500 italic bg-rhDark p-2 rounded">
-                            💡 Easter Egg: The math was easy. The clearinghouse requirements weren't.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CHAPTER 3 -->
-            <div class="relative flex flex-col md:flex-row items-center group">
-                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-rhDark border-2 border-rhGreen text-rhGreen text-xs font-mono font-bold z-10 mb-4 md:mb-0 shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                    NYC
-                </div>
-                <div class="w-full md:w-[45%] md:pr-8 md:text-right">
-                    <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-3 hover:border-rhGreen/40 transition">
-                        <span class="text-[10px] font-mono bg-gray-800 px-2.5 py-1 rounded text-gray-300">CHAPTER 03</span>
-                        <h3 class="text-xl font-black text-rhGreen">Inside Finance</h3>
-                        <p class="text-xs text-gray-400 leading-relaxed">
-                            Building high-frequency trading software in Wall Street. They realized financial institutions had zero fees for themselves, but retail paid for everything.
-                        </p>
-                        <div class="text-[11px] font-mono text-rhGold">
-                            ⚠️ Question Raised: Why is finance so complicated?
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CHAPTER 4 (CLASSIFIED FILE) -->
-            <div class="relative flex flex-col md:flex-row items-center group md:flex-row-reverse">
-                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-rhDark border-2 border-rhRed text-rhRed text-xs font-mono font-bold z-10 mb-4 md:mb-0 shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                    🔒
-                </div>
-                <div class="w-full md:w-[45%] md:pl-8">
-                    <div class="classified-pattern p-6 rounded-2xl border border-rhRed/40 space-y-3 relative overflow-hidden">
-                        <div class="flex justify-between items-center">
-                            <span class="text-[10px] font-mono bg-rhRed/20 text-rhRed px-2 py-0.5 rounded font-bold">CLASSIFIED FILE #04</span>
-                            <span class="text-[10px] font-mono text-gray-500">FEB 2021</span>
-                        </div>
-                        <h3 class="text-xl font-black text-rhRed">The Hearing & The Restrict Button</h3>
-                        <p class="text-xs text-gray-300 leading-relaxed">
-                            [REDACTED] ... volatility exceeded limits ... [REDACTED] ... "Thank you Congressman for that very important question..."
-                        </p>
-                        <button onclick="unlockClassified()" class="text-xs font-mono text-rhRed underline hover:text-white">
-                            [ Click to Decrypt Document ]
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CHAPTER 5: THE TYPO -->
-            <div class="relative flex flex-col md:flex-row items-center group">
-                <div class="flex items-center justify-center w-10 h-10 rounded-full bg-rhDark border-2 border-rhGreen text-rhGreen text-xs font-mono font-bold z-10 mb-4 md:mb-0 shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-                    TODAY
-                </div>
-                <div class="w-full md:w-[45%] md:pr-8 md:text-right">
-                    <div class="bg-rhCard p-6 rounded-2xl border border-rhGreen/50 space-y-3 neon-glow">
-                        <span class="text-[10px] font-mono bg-rhGreen text-black px-2.5 py-1 rounded font-bold">CHAPTER 05</span>
-                        <h3 class="text-xl font-black text-rhGreen">The Internet's Version: VLADFROM</h3>
-                        <p class="text-xs text-gray-300 leading-relaxed">
-                            They asked for a platform. The internet heard <strong>VLADFROM</strong>. The typo became lore. The lore became an experiment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- INTERACTIVE VOTING: BUILD THE NEXT CHAPTER -->
-    <section class="max-w-3xl mx-auto px-6 py-16 w-full">
-        <div class="bg-rhCard border border-gray-800 rounded-2xl p-8 space-y-6 text-center relative overflow-hidden">
-            <div class="inline-block bg-rhGreen/10 border border-rhGreen/30 text-rhGreen px-3 py-1 rounded-full text-xs font-mono font-bold">
-                COMMUNITY DECISION ENGINE
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-black">BUILD THE NEXT CHAPTER</h2>
-            <p class="text-xs text-gray-400">What happens next in the story of Vladfrom? The internet decides.</p>
-
-            <div class="grid sm:grid-cols-2 gap-3 pt-2 text-left">
-                <button onclick="voteOption('A')" class="p-4 bg-rhDark rounded-xl border border-gray-800 hover:border-rhGreen text-xs font-semibold transition flex justify-between items-center group">
-                    <span>A. Vlad becomes a trillionaire</span>
-                    <span id="count-A" class="font-mono text-rhGreen font-bold">42%</span>
-                </button>
-                <button onclick="voteOption('B')" class="p-4 bg-rhDark rounded-xl border border-gray-800 hover:border-rhGreen text-xs font-semibold transition flex justify-between items-center group">
-                    <span>B. Vlad disappears to Bulgaria</span>
-                    <span id="count-B" class="font-mono text-rhGreen font-bold">18%</span>
-                </button>
-                <button onclick="voteOption('C')" class="p-4 bg-rhDark rounded-xl border border-gray-800 hover:border-rhGreen text-xs font-semibold transition flex justify-between items-center group">
-                    <span>C. Vlad creates something new</span>
-                    <span id="count-C" class="font-mono text-rhGreen font-bold">25%</span>
-                </button>
-                <button onclick="voteOption('D')" class="p-4 bg-rhDark rounded-xl border border-gray-800 hover:border-rhGreen text-xs font-semibold transition flex justify-between items-center group">
-                    <span>D. The Internet decides</span>
-                    <span id="count-D" class="font-mono text-rhGreen font-bold">15%</span>
-                </button>
-            </div>
-            <p id="vote-thanks" class="text-[11px] font-mono text-rhGreen hidden">✓ Vote recorded in archive registry!</p>
-        </div>
-    </section>
-
-    <!-- THE TRANSITION TO TOKEN (SUBTLE & EXPERIMENTAL) -->
-    <section class="border-t border-gray-800 bg-rhCard/40 py-20 w-full">
-        <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
-            <h2 class="text-3xl font-black">YOU JUST READ THE STORY.</h2>
-            <p class="text-gray-300 text-base italic">
-                Now you're part of the experiment.
-            </p>
-            <p class="text-xs text-gray-500 max-w-xl mx-auto leading-relaxed">
-                $VLADFROM is an experimental asset celebrating internet lore, misread assignments, and retail power. No utility promised. Pure internet culture.
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight">
+                IT'S NOT A PLATFORM.<br>
+                <span class="text-rhGreen text-glow">IT'S VLADFROM.</span>
+            </h1>
+            <p class="text-gray-400 text-lg border-l-2 border-rhGreen pl-4 italic">
+                They asked us to build a platform.<br>
+                We misunderstood the assignment.
             </p>
 
-            <!-- Contract Address Box -->
-            <div class="bg-rhDark p-4 rounded-xl border border-gray-800 max-w-md mx-auto flex items-center justify-between gap-2">
-                <div class="text-xs font-mono text-gray-400 truncate">
+            <!-- Contract Address Quick Access -->
+            <div class="bg-rhCard border border-gray-800 rounded-xl p-3 flex items-center justify-between gap-2">
+                <div class="text-xs text-gray-400 truncate font-mono">
                     <span class="text-rhGreen font-bold">CA:</span> <span id="ca-text">0x0757272848c751e56C16d24105d2AA8db28ae93e</span>
                 </div>
                 <button onclick="copyCA()" class="bg-gray-800 hover:bg-gray-700 text-xs text-rhGreen font-bold px-3 py-1.5 rounded-lg border border-gray-700 transition shrink-0">
-                    <i class="fa-regular fa-copy"></i>
+                    <i class="fa-regular fa-copy mr-1"></i> Copy
                 </button>
             </div>
 
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-                <a href="https://pump.fun" target="_blank" class="bg-rhGreen text-black font-black text-sm py-3.5 px-8 rounded-xl hover:bg-emerald-400 transition neon-glow">
-                    TRADE ON PUMP.FUN 🚀
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                <a href="#token" class="text-center bg-rhGreen text-black font-extrabold text-base py-3.5 px-8 rounded-xl hover:bg-emerald-400 transition neon-glow">
+                    BUY $VLADFROM
                 </a>
-                <a href="https://x.com/VladfromRH" target="_blank" class="bg-gray-800 text-white font-bold text-sm py-3.5 px-8 rounded-xl border border-gray-700 hover:bg-gray-700 transition">
-                    JOIN THE X COMMUNITY
+                <a href="#about" class="text-center bg-rhCard border border-gray-700 hover:border-rhGreen text-white font-bold text-base py-3.5 px-8 rounded-xl transition">
+                    ENTER VLADFROM ↓
+                </a>
+            </div>
+        </div>
+
+        <!-- HERO VISUAL -->
+        <div class="flex justify-center items-center">
+            <div class="relative group w-full flex justify-center">
+                <div class="absolute inset-0 bg-rhGreen rounded-full blur-2xl opacity-25 group-hover:opacity-50 transition duration-700 max-w-[380px] mx-auto"></div>
+                <img src="images/Vladfrom.png" 
+                     onerror="this.onerror=null; this.src='./images/Vladfrom.png';"
+                     alt="Vladfrom Meme" 
+                     class="relative w-full max-w-[340px] md:max-w-[400px] h-auto object-contain transition transform group-hover:scale-105 duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYER 2: THE LORE & WHAT IS VLADFROM -->
+    <section id="about" class="border-t border-gray-800 bg-rhCard/40 py-20 w-full">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl md:text-5xl font-black tracking-wide">WHAT THE F*** IS <span class="text-rhGreen">VLADFROM?</span></h2>
+                <p class="text-gray-400 text-base">Nobody really knows. But here is the objective scientific breakdown:</p>
+            </div>
+
+            <!-- Absurd 3-Card Comparison -->
+            <div class="grid md:grid-cols-3 gap-6 mb-20">
+                <div class="bg-rhCard p-8 rounded-2xl border border-red-500/20 text-center space-y-4">
+                    <div class="text-5xl">❌</div>
+                    <h3 class="text-2xl font-black text-rhRed">PLATFORM</h3>
+                    <p class="text-sm text-gray-400">Status: Rejected.</p>
+                    <p class="text-xs text-gray-500 italic">Too conventional. Borne out of corporate meeting rooms. Boring.</p>
+                </div>
+
+                <div class="bg-rhCard p-8 rounded-2xl border border-rhGreen/50 text-center space-y-4 neon-glow relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-rhGreen text-black text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider">Official</span>
+                    <div class="text-5xl">✅</div>
+                    <h3 class="text-2xl font-black text-rhGreen">VLADFROM</h3>
+                    <p class="text-sm text-gray-300">Status: Accepted.</p>
+                    <p class="text-xs text-gray-400 italic">The mistake that became a movement. Retail always wins here.</p>
+                </div>
+
+                <div class="bg-rhCard p-8 rounded-2xl border border-gray-800 text-center space-y-4">
+                    <div class="text-5xl">🤷‍♂️</div>
+                    <h3 class="text-2xl font-black text-gray-400">WHY?</h3>
+                    <p class="text-sm text-gray-400">Status: Nobody asked.</p>
+                    <p class="text-xs text-gray-500 italic">We misunderstood the assignment, and frankly, we don't care.</p>
+                </div>
+            </div>
+
+            <!-- THE ORIGINAL MISTAKE TIMELINE -->
+            <div class="max-w-4xl mx-auto border border-gray-800 bg-rhDark/80 rounded-2xl p-8 md:p-12">
+                <h3 class="text-2xl font-black text-rhGreen mb-8 text-center tracking-wide">THE STORY OF THE ORIGINAL MISTAKE</h3>
+                <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 bg-rhCard rounded-xl border border-gray-800 space-y-2">
+                        <div class="text-rhGreen font-mono font-bold text-sm">01 — REQUEST</div>
+                        <p class="text-sm font-semibold">“We need a platform.”</p>
+                    </div>
+                    <div class="p-4 bg-rhCard rounded-xl border border-gray-800 space-y-2">
+                        <div class="text-rhGreen font-mono font-bold text-sm">02 — TYPO</div>
+                        <p class="text-sm font-semibold">Someone typed “VLADFROM.”</p>
+                    </div>
+                    <div class="p-4 bg-rhCard rounded-xl border border-gray-800 space-y-2">
+                        <div class="text-rhGreen font-mono font-bold text-sm">03 — IGNORED</div>
+                        <p class="text-sm font-semibold">Nobody fixed it. Too late.</p>
+                    </div>
+                    <div class="p-4 bg-rhCard rounded-xl border border-rhGreen/40 space-y-2">
+                        <div class="text-rhGreen font-mono font-bold text-sm">04 — VLADFROM</div>
+                        <p class="text-sm font-semibold">Now it's a platform. Sort of.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VLADFROM DICTIONARY -->
+    <section id="dictionary" class="py-20 max-w-5xl mx-auto px-6 w-full">
+        <h2 class="text-3xl md:text-4xl font-black text-center mb-12 tracking-wide">THE <span class="text-rhGreen">VLADFROM</span> DICTIONARY</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-xl text-rhGreen">VLADFROM</span>
+                    <span class="text-xs font-mono text-gray-500">noun</span>
+                </div>
+                <p class="text-sm text-gray-300">A platform that was never supposed to exist, yet somehow holds everything together.</p>
+            </div>
+
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-xl text-rhGreen">VLADFROM'D</span>
+                    <span class="text-xs font-mono text-gray-500">verb</span>
+                </div>
+                <p class="text-sm text-gray-300">To completely misunderstand a simple assignment and accidentally make it better.</p>
+                <p class="text-xs text-rhGreen italic border-t border-gray-800 pt-2">“Bro, I think you just Vladfrom'd it.”</p>
+            </div>
+
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-3">
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-xl text-gray-500 line-through">PLATFORM</span>
+                    <span class="text-xs font-mono text-rhRed">deprecated</span>
+                </div>
+                <p class="text-sm text-gray-400">The boring word we were originally supposed to use. Replaced by human destiny.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE VLADFROM HEARING (INTERACTIVE) -->
+    <section id="hearing" class="border-y border-gray-800 bg-rhCard/30 py-20 w-full">
+        <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+            <div class="inline-block bg-rhGreen/10 border border-rhGreen/30 text-rhGreen px-3 py-1 rounded-full text-xs font-bold">
+                🏛️ CONGRESSIONAL EXCUSE GENERATOR
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black">THE VLADFROM HEARING</h2>
+            <p class="text-gray-400 text-sm">Ask Vlad a direct question. Prepare for an answer that doesn't answer anything.</p>
+
+            <div class="p-8 bg-rhDark rounded-2xl border border-gray-800 min-h-[140px] flex flex-col items-center justify-center space-y-3 shadow-inner">
+                <p id="hearing-q" class="text-xs font-mono text-rhGreen uppercase tracking-wider">Question 01</p>
+                <p id="hearing-a" class="text-lg md:text-xl font-semibold italic text-gray-200">
+                    "Thank you Congressman for that very important question about our vladfrom..."
+                </p>
+            </div>
+
+            <div class="flex justify-center gap-4">
+                <button onclick="nextHearingAnswer()" class="bg-rhGreen text-black font-extrabold text-sm px-6 py-3 rounded-xl hover:bg-emerald-400 transition neon-glow">
+                    <i class="fa-solid fa-comments mr-2"></i> ASK VLADFROM
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYER 3: TOOLS (GENERATOR & TRANSLATOR) -->
+    <section id="tools" class="py-20 max-w-5xl mx-auto px-6 w-full space-y-16">
+        <div class="text-center space-y-3">
+            <h2 class="text-3xl md:text-4xl font-black">VLADFROM <span class="text-rhGreen">LABS</span></h2>
+            <p class="text-gray-400 text-sm">Interactive tools to correct your daily vocabulary.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- TOOL 1: GENERATOR -->
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-4">
+                <h3 class="font-bold text-lg text-rhGreen flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> THE VLADFROM GENERATOR
+                </h3>
+                <p class="text-xs text-gray-400">Enter any regular word to fix its platform alignment.</p>
+                <input type="text" id="gen-input" placeholder="e.g. Platform" class="w-full bg-rhDark border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-rhGreen">
+                <button onclick="runGenerator()" class="w-full bg-gray-800 hover:bg-gray-700 text-rhGreen font-bold text-sm py-3 rounded-xl border border-gray-700 transition">
+                    VLADFROM IT
+                </button>
+                <div id="gen-output" class="hidden p-4 bg-rhDark rounded-xl border border-rhGreen/30 text-center font-mono font-bold text-rhGreen text-lg">
+                    VLADFROM
+                </div>
+            </div>
+
+            <!-- TOOL 2: TRANSLATOR -->
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 space-y-4">
+                <h3 class="font-bold text-lg text-rhGreen flex items-center gap-2">
+                    <i class="fa-solid fa-language"></i> VLADFROM TRANSLATOR™
+                </h3>
+                <p class="text-xs text-gray-400">Translate corporate sentences into pure Vladfrom speech.</p>
+                <input type="text" id="trans-input" value="We are building a new platform." class="w-full bg-rhDark border border-gray-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-rhGreen">
+                <button onclick="runTranslator()" class="w-full bg-gray-800 hover:bg-gray-700 text-rhGreen font-bold text-sm py-3 rounded-xl border border-gray-700 transition">
+                    TRANSLATE
+                </button>
+                <div id="trans-output" class="p-4 bg-rhDark rounded-xl border border-rhGreen/30 text-center text-sm font-semibold text-gray-200 italic">
+                    “We are building a new VLADFROM.”
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VLADFROM ARCHIVE (MUSEUM MEME) -->
+    <section id="archive" class="border-t border-gray-800 bg-rhCard/20 py-20 w-full">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-black">THE <span class="text-rhGreen">VLADFROM ARCHIVE</span></h2>
+                    <p class="text-sm text-gray-400 mt-1">Official Internet Museum of Mistakes</p>
+                </div>
+                <a href="https://x.com/VladfromRH" target="_blank" class="text-xs text-rhGreen font-bold hover:underline">Submit Meme on X →</a>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Archive Card #001 -->
+                <div class="bg-rhCard rounded-2xl overflow-hidden border border-gray-800 hover:border-rhGreen/50 transition group">
+                    <div class="p-4 border-b border-gray-800 flex justify-between text-xs font-mono text-gray-400">
+                        <span>VLADFROM #001</span>
+                        <span class="text-rhGreen font-bold">THE ORIGINAL</span>
+                    </div>
+                    <div class="p-4 bg-rhDark flex justify-center items-center h-48">
+                        <img src="images/Vladfrom.png" alt="Archive 001" class="h-full object-contain group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4 flex justify-between items-center text-xs">
+                        <span class="text-gray-300 font-semibold">The Day Platform Died</span>
+                        <a href="https://x.com/VladfromRH" target="_blank" class="text-rhGreen hover:underline">View on X →</a>
+                    </div>
+                </div>
+
+                <!-- Archive Card #002 -->
+                <div class="bg-rhCard rounded-2xl overflow-hidden border border-gray-800 hover:border-rhGreen/50 transition group">
+                    <div class="p-4 border-b border-gray-800 flex justify-between text-xs font-mono text-gray-400">
+                        <span>VLADFROM #002</span>
+                        <span>TYPO ERROR</span>
+                    </div>
+                    <div class="p-4 bg-rhDark flex justify-center items-center h-48 text-center text-gray-500 font-mono text-xs">
+                        [ MEME #002 LOADING ]
+                    </div>
+                    <div class="p-4 flex justify-between items-center text-xs">
+                        <span class="text-gray-300 font-semibold">Clearinghouse Volatility</span>
+                        <a href="https://x.com/VladfromRH" target="_blank" class="text-rhGreen hover:underline">View on X →</a>
+                    </div>
+                </div>
+
+                <!-- Archive Card #003 -->
+                <div class="bg-rhCard rounded-2xl overflow-hidden border border-gray-800 hover:border-rhGreen/50 transition group">
+                    <div class="p-4 border-b border-gray-800 flex justify-between text-xs font-mono text-gray-400">
+                        <span>VLADFROM #003</span>
+                        <span>AUTOCORRECT</span>
+                    </div>
+                    <div class="p-4 bg-rhDark flex justify-center items-center h-48 text-center text-gray-500 font-mono text-xs">
+                        [ MEME #003 LOADING ]
+                    </div>
+                    <div class="p-4 flex justify-between items-center text-xs">
+                        <span class="text-gray-300 font-semibold">Bulgarian Boyhood</span>
+                        <a href="https://x.com/VladfromRH" target="_blank" class="text-rhGreen hover:underline">View on X →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOKEN / VLADFROMOMICS SECTION -->
+    <section id="token" class="max-w-6xl mx-auto px-6 py-20 w-full">
+        <div class="text-center max-w-xl mx-auto mb-12 space-y-3">
+            <h2 class="text-3xl md:text-4xl font-black">VLADFROM<span class="text-rhGreen">OMICS</span></h2>
+            <p class="text-gray-400 text-sm">No tax. No corporate nonsense. Pure Vladfrom power.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 text-center space-y-2">
+                <div class="text-xs text-gray-400 font-mono">TOTAL SUPPLY</div>
+                <div class="text-3xl font-black text-rhGreen">1,000,000,000</div>
+                <p class="text-xs text-gray-500">1 Billion $VLADFROM Tokens</p>
+            </div>
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 text-center space-y-2">
+                <div class="text-xs text-gray-400 font-mono">BUY / SELL TAX</div>
+                <div class="text-3xl font-black text-rhGreen">0% / 0%</div>
+                <p class="text-xs text-gray-500">Zero fees for retail</p>
+            </div>
+            <div class="bg-rhCard p-6 rounded-2xl border border-gray-800 text-center space-y-2">
+                <div class="text-xs text-gray-400 font-mono">NETWORK</div>
+                <div class="text-3xl font-black text-rhGreen">ETHEREUM</div>
+                <p class="text-xs text-gray-500">ERC-20 Standard</p>
+            </div>
+        </div>
+
+        <!-- Contract & Purchase Panel -->
+        <div class="max-w-3xl mx-auto bg-rhCard p-8 rounded-2xl border border-gray-800 text-center space-y-6">
+            <h3 class="font-bold text-lg text-gray-300">CONTRACT ADDRESS</h3>
+            <div class="bg-rhDark p-4 rounded-xl border border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <span class="font-mono text-xs sm:text-sm text-rhGreen break-all">0x0757272848c751e56C16d24105d2AA8db28ae93e</span>
+                <button onclick="copyCA()" class="bg-gray-800 hover:bg-gray-700 text-rhGreen font-bold text-xs px-4 py-2.5 rounded-lg border border-gray-700 transition shrink-0">
+                    <i class="fa-regular fa-copy mr-1"></i> COPY CA
+                </button>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://uniswap.org" target="_blank" class="bg-rhGreen text-black font-extrabold text-base py-3.5 px-8 rounded-xl hover:bg-emerald-400 transition neon-glow">
+                    BUY $VLADFROM ON UNISWAP
+                </a>
+                <a href="https://etherscan.io" target="_blank" class="bg-gray-800 text-white font-bold text-base py-3.5 px-8 rounded-xl border border-gray-700 hover:bg-gray-700 transition">
+                    VIEW ON EXPLORER
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- HOW TO VLADFROM -->
+    <section class="border-t border-gray-800 bg-rhCard/30 py-20 w-full">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-12">
+            <h2 class="text-3xl font-black">HOW TO <span class="text-rhGreen">VLADFROM</span></h2>
+            <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-4 text-left">
+                <div class="bg-rhCard p-4 rounded-xl border border-gray-800 space-y-2">
+                    <div class="text-rhGreen font-mono font-black">STEP 01</div>
+                    <p class="text-xs text-gray-300">Someone asks you to build a platform.</p>
+                </div>
+                <div class="bg-rhCard p-4 rounded-xl border border-gray-800 space-y-2">
+                    <div class="text-rhGreen font-mono font-black">STEP 02</div>
+                    <p class="text-xs text-gray-300">Misunderstand the assignment completely.</p>
+                </div>
+                <div class="bg-rhCard p-4 rounded-xl border border-gray-800 space-y-2">
+                    <div class="text-rhGreen font-mono font-black">STEP 03</div>
+                    <p class="text-xs text-gray-300">Replace PLATFORM with VLADFROM.</p>
+                </div>
+                <div class="bg-rhCard p-4 rounded-xl border border-gray-800 space-y-2">
+                    <div class="text-rhGreen font-mono font-black">STEP 04</div>
+                    <p class="text-xs text-gray-300">Never explain yourself to Congress.</p>
+                </div>
+                <div class="bg-rhCard p-4 rounded-xl border border-rhGreen/50 space-y-2 neon-glow">
+                    <div class="text-rhGreen font-mono font-black">STEP 05</div>
+                    <p class="text-xs font-bold text-rhGreen">Congrats! You have Vladfrom'd.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="py-20 max-w-4xl mx-auto px-6 text-center space-y-6 w-full">
+        <h2 class="text-3xl sm:text-4xl font-black">YOU FOUND <span class="text-rhGreen">VLADFROM.</span></h2>
+        <p class="text-gray-400 text-base">Unfortunately, there's no going back now.</p>
+        <div>
+            <a href="https://x.com/VladfromRH" target="_blank" class="inline-flex items-center gap-3 bg-gray-800 hover:bg-gray-700 text-rhGreen font-black text-lg px-8 py-4 rounded-xl border border-gray-700 transition">
+                <i class="fa-brands fa-x-twitter text-xl"></i> FOLLOW @VLADFROMRH
+            </a>
+        </div>
+        <p class="text-xs font-mono text-gray-500">Over 1,000 people have already misunderstood the assignment.</p>
+    </section>
+
     <!-- FOOTER -->
-    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-600 space-y-3 w-full px-6">
-        <p>VLADFROM ARCHIVE — THE INTERNET'S VERSION</p>
-        <p class="max-w-xl mx-auto text-[11px] text-gray-700">
-            $VLADFROM is an independent meme project for entertainment purposes. Not affiliated with Robinhood Markets, Inc. or Vlad Tenev.
+    <footer class="border-t border-gray-800 py-10 bg-rhDark text-center space-y-6 w-full px-6">
+        <div class="space-y-2">
+            <div class="text-rhGreen font-black text-xl tracking-wider">$VLADFROM</div>
+            <p class="text-xs text-gray-400 font-mono">IT'S NOT A PLATFORM. IT'S VLADFROM.</p>
+        </div>
+
+        <div class="flex justify-center gap-6 text-xs text-gray-400 font-bold">
+            <a href="https://x.com/VladfromRH" target="_blank" class="hover:text-rhGreen">X / TWITTER</a>
+            <a href="#token" class="hover:text-rhGreen">CONTRACT</a>
+            <a href="#archive" class="hover:text-rhGreen">ARCHIVE</a>
+            <a href="#about" class="hover:text-rhGreen">LORE</a>
+        </div>
+
+        <!-- AFFILIATION DISCLAIMER -->
+        <p class="max-w-2xl mx-auto text-[11px] text-gray-600 leading-relaxed">
+            $VLADFROM is an independent meme project created purely for entertainment purposes. It is not affiliated with, endorsed by, or connected to Robinhood Markets, Inc., Vlad Tenev, or any official corporate entity.
         </p>
+
+        <p class="text-xs text-gray-700">© 2026 VLADFROM. All rights reserved.</p>
     </footer>
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
+        // Copy CA Function
         function copyCA() {
             const ca = document.getElementById('ca-text').innerText;
             navigator.clipboard.writeText(ca);
             alert('Contract address copied: ' + ca);
         }
 
-        function unlockClassified() {
-            alert('DECRYPTING FILE:\n\n"When I was a young boy in Bulgaria, we did not have trading buttons either. Thank you Congressman."');
+        // Hearing Answers Generator
+        const hearingData = [
+            { q: "Question 01", a: '"Thank you Congressman for that very important question about our vladfrom..."' },
+            { q: "Question 02", a: '"When I was a young boy in 1990s Bulgaria, we did not have trading buttons either."' },
+            { q: "Question 03", a: '"We had to temporarily restrict buying on our vladfrom to satisfy margin requirements."' },
+            { q: "Question 04", a: '"I appreciate the opportunity to clarify: the vladfrom was simply experiencing high volatility."' },
+            { q: "Question 05", a: '"Is VLADFROM a platform? Next question."' }
+        ];
+        let hIndex = 0;
+        function nextHearingAnswer() {
+            hIndex = (hIndex + 1) % hearingData.length;
+            document.getElementById('hearing-q').innerText = hearingData[hIndex].q;
+            document.getElementById('hearing-a').innerText = hearingData[hIndex].a;
         }
 
-        function voteOption(option) {
-            document.getElementById('vote-thanks').classList.remove('hidden');
-            alert('Thank you for shaping Chapter 6! Option ' + option + ' registered.');
+        // Vladfrom Generator
+        function runGenerator() {
+            const input = document.getElementById('gen-input').value.trim();
+            const output = document.getElementById('gen-output');
+            output.classList.remove('hidden');
+            if (input === "") {
+                output.innerText = "VLADFROM";
+            } else {
+                output.innerText = "VLADFROM";
+            }
+        }
+
+        // Vladfrom Translator
+        function runTranslator() {
+            const input = document.getElementById('trans-input').value;
+            const output = document.getElementById('trans-output');
+            if(!input) return;
+            
+            // Replace word platform/Platform with VLADFROM
+            let translated = input.replace(/platform/gi, "VLADFROM");
+            if(translated === input) {
+                translated += " (VLADFROM)";
+            }
+            output.innerText = `“${translated}”`;
         }
     </script>
 </body>
